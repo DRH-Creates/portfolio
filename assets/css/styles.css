@@ -1255,9 +1255,17 @@ textarea.field__input { resize: vertical; min-height: 110px; }
 ═══════════════════════════════════════════════ */
 @media (max-width: 768px) {
   .section { padding: 4.5rem 0; }
-  .hero { align-items: center; }
-  .hero__content { padding: 5rem 1.25rem 2rem; }
-  .hero__title { font-size: clamp(3rem, 12vw, 5rem); }
+  .hero { align-items: stretch; }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    padding: 11rem 1.25rem 4rem;
+  }
+  .hero__eyebrow { margin-left: .9rem; }
+  .hero__badge { align-self: flex-start; }
+  .hero__title { margin-top: calc(18vh - 5.5rem); font-size: clamp(6.5rem, 17vw, 9rem); }
+  .btn { font-size: 1rem; padding: .9rem 2rem; }
   .container { padding: 0 1.25rem; }
   .topnav { padding: 0.9rem 1.25rem; }
   .footer { padding: 2rem 1.25rem 2rem; }
