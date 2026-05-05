@@ -29,7 +29,7 @@ A single-page portfolio built with vanilla HTML, CSS, and JavaScript. No framewo
 |---|---|
 | Accessibility | 100 |
 | SEO | 100 |
-| Best Practices | 96 |
+| Best Practices | 100 |
 
 ---
 
