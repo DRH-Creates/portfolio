@@ -94,11 +94,17 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 // Dock active link (scroll spy)
 const sections  = ['about','photography','work','skills','contact'].map(id => document.getElementById(id));
 const dockLinks = document.querySelectorAll('.dock__link');
+let sectionTops = [];
+function cacheSectionTops() {
+  sectionTops = sections.map(sec => sec ? sec.offsetTop : 0);
+}
+cacheSectionTops();
+window.addEventListener('resize', cacheSectionTops, { passive: true });
 function updateActiveDock() {
   let activeId = 'about';
   const y = window.scrollY + window.innerHeight * 0.35;
-  sections.forEach(sec => {
-    if (sec && sec.offsetTop <= y) activeId = sec.id;
+  sections.forEach((sec, i) => {
+    if (sec && sectionTops[i] <= y) activeId = sec.id;
   });
   dockLinks.forEach(l => {
     l.classList.toggle('active', l.getAttribute('href') === '#' + activeId);
