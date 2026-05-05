@@ -1,3 +1,12 @@
+/* font-display: swap overrides for CDN-loaded fonts */
+@font-face { font-family: 'Font Awesome 6 Free'; font-style: normal; font-weight: 400; font-display: swap; src: local('Font Awesome 6 Free Regular'); }
+@font-face { font-family: 'Font Awesome 6 Free'; font-style: normal; font-weight: 900; font-display: swap; src: local('Font Awesome 6 Free Solid'); }
+@font-face { font-family: 'Font Awesome 6 Brands'; font-style: normal; font-weight: 400; font-display: swap; src: local('Font Awesome 6 Brands Regular'); }
+@font-face { font-family: 'Babylonica'; font-style: normal; font-weight: 400; font-display: swap; src: local('Babylonica'); }
+@font-face { font-family: 'Quintessential'; font-style: normal; font-weight: 400; font-display: swap; src: local('Quintessential'); }
+@font-face { font-family: 'Truculenta'; font-style: normal; font-weight: 300 600; font-display: swap; src: local('Truculenta'); }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 400 500; font-display: swap; src: local('JetBrains Mono'); }
+
 /* ═══════════════════════════════════════════════
    TOKENS — dark moss palette (Photo-First Hybrid)
 ═══════════════════════════════════════════════ */
