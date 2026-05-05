@@ -1,0 +1,16 @@
+# Claude Code
+.claude/
+
+# VS Code
+.vscode/
+
+# Scratch & uploads
+scraps/
+uploads/
+
+# Wireframes (design reference, not production)
+Wireframes.html
+
+# OS
+.DS_Store
+Thumbs.db

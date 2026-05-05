@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:drh-creates.github.io)"
-    ]
-  }
-}
